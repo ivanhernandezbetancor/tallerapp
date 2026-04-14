@@ -9,9 +9,19 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 app.use(express.static('public'));
 app.listen(3000);
+
 // Rutas API
 const clientesRoutes = require('./routes/clientes');
+const vehiculosRoutes = require('./routes/vehiculos');
+const mecanicosRoutes = require('./routes/mecanicos');
+const diagnosticosRoutes = require('./routes/diagnosticos');
+
+
 app.use('/api/clientes', clientesRoutes);
+app.use('/api/vehiculos', vehiculosRoutes);
+app.use('/api/mecanicos', mecanicosRoutes);
+app.use('/api/diagnosticos', diagnosticosRoutes);
+
 
 app.get('/', (req, res) => {
     res.json({
