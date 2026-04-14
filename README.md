@@ -75,3 +75,5 @@ Base de datos MySQL:
 - Error de contraseña MySQL (solucionado con DB_PASSWORD=1234)
 - Conflicto de ramas Git (solucionado con git pull --allow-unrelated-histories)
 
+#### MARTES 14/04/2026
+**Tareas completadas:**
