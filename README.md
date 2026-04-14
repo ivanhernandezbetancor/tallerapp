@@ -9,7 +9,7 @@ Sistema de gestión para taller de reparación de vehículos.
 ### SEMANA 1: Entorno, BD y API Base 
 
 #### LUNES 13/04/2026 
-
+#### ENTORNO DE DESARROLLO + CONFIGURACIÓN BASE
 **Tareas completadas:**
 
 Repositorio GitHub creado y sincronizado  
@@ -39,8 +39,6 @@ Base de datos MySQL:
   - Tabla: mecanicos
   - Tabla: vehiculos
   - Datos de prueba insertados (2 clientes, 2 mecánicos, 2 vehículos)
-
-
 
  API REST - Clientes:
   - controllers/clientesController.js (funciones CRUD)
@@ -76,4 +74,87 @@ Base de datos MySQL:
 - Conflicto de ramas Git (solucionado con git pull --allow-unrelated-histories)
 
 #### MARTES 14/04/2026
-**Tareas completadas:**
+#### API CRUD: VEHÍCULOS, MECÁNICOS Y DIAGNÓSTICOS
+**Tareas completadas:** 
+1. Módulo Vehículos — CRUD completo
+
+Permite gestionar los vehículos asociados a clientes.
+
+Validaciones:
+
+cliente_id, matricula, marca, modelo son obligatorios
+La matricula debe ser única → devuelve HTTP 409 en caso de duplicado
+
+Características:
+
+Relación con clientes mediante JOIN para mostrar el nombre del propietario
+
+Endpoints:
+
+Método	Endpoint	Descripción
+GET	/api/vehiculos	Listar vehículos con nombre del cliente
+GET	/api/vehiculos/:id	Obtener detalle de un vehículo
+POST	/api/vehiculos	Crear vehículo vinculado a cliente
+PUT	/api/vehiculos/:id	Actualizar datos técnicos
+DELETE	/api/vehiculos/:id	Eliminar vehículo
+2. Módulo Mecánicos — CRUD completo
+
+Permite gestionar los mecánicos del sistema.
+
+Endpoints:
+
+Método	Endpoint	Descripción
+GET	/api/mecanicos	Listar mecánicos activos
+GET	/api/mecanicos/:id	Obtener detalle de un mecánico
+POST	/api/mecanicos	Crear mecánico
+PUT	/api/mecanicos/:id	Actualizar datos
+DELETE	/api/mecanicos/:id	Baja lógica del mecánico
+
+3. Módulo Diagnósticos — CRUD inicial
+
+Gestiona los diagnósticos asociados a los vehículos.
+
+Estructura de la tabla diagnosticos:
+
+vehiculo_id: FK → vehículo afectado
+mecanico_id: FK → mecánico asignado (permite NULL, ON DELETE SET NULL)
+problema_declarado: descripción del cliente
+diagnostico_tecnico: análisis del mecánico
+fotos_entrada: array JSON con URLs de imágenes
+estado:  ENUM('pendiente_presupuesto','presupuestado','rechazado')
+
+Endpoints:
+
+Método	-- Endpoint --	Descripción
+GET	/api/diagnosticos	Listar todos los diagnósticos
+GET	/api/diagnosticos/:id	Obtener detalle
+POST	/api/diagnosticos	Crear entrada de diagnóstico
+PUT	/api/diagnosticos/:id	Actualizar diagnóstico técnico
+
+🔗 Integración de rutas
+
+En el archivo server.js se han conectado los módulos de la siguiente forma:
+
+app.use('/api/vehiculos', vehiculosRoutes);
+app.use('/api/mecanicos', mecanicosRoutes);
+app.use('/api/diagnosticos', diagnosticosRoutes);
+
+🧪 Datos de prueba
+
+Se han insertado datos iniciales en la base de datos:
+
+4 diagnósticos (2 en estado presupuestado, 2 en pendiente_presupuesto)
+
+## 📁 Archivos creados / editados
+
+Durante el desarrollo de la API se han creado y modificado los siguientes archivos:
+
+* `controllers/vehiculosController.js`
+* `routes/vehiculos.js`
+* `controllers/mecanicosController.js`
+* `routes/mecanicos.js`
+* `controllers/diagnosticosController.js`
+* `routes/diagnosticos.js`
+* `server.js` (configuración y conexión de rutas)
+
+Estos archivos estructuran la aplicación siguiendo una arquitectura modular, separando la lógica de negocio (controladores) de la definición de endpoints (rutas).
