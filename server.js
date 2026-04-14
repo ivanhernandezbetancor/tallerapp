@@ -8,7 +8,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 app.use(express.static('public'));
-
+app.listen(3000);
 // Rutas API
 const clientesRoutes = require('./routes/clientes');
 app.use('/api/clientes', clientesRoutes);
