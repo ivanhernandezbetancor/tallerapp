@@ -107,14 +107,8 @@ Endpoints:
 
 Gestiona los diagnósticos asociados a los vehículos.
 
-Estructura de la tabla diagnosticos:
+<img width="765" height="350" alt="Captura de pantalla 2026-04-15 102212" src="https://github.com/user-attachments/assets/397f4595-2013-4f73-ad5c-20e0b1e0ded9" />
 
-vehiculo_id: FK → vehículo afectado
-mecanico_id: FK → mecánico asignado (permite NULL, ON DELETE SET NULL)
-problema_declarado: descripción del cliente
-diagnostico_tecnico: análisis del mecánico
-fotos_entrada: array JSON con URLs de imágenes
-estado:  ENUM('pendiente_presupuesto','presupuestado','rechazado')
 
 Endpoints:
 
