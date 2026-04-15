@@ -60,14 +60,14 @@ Base de datos MySQL:
   - Rama main sincronizada
   - .gitignore configurado
 
- Archivos creados:
-  - package.json
-  - server.js
-  - config/database.js
-  - controllers/clientesController.js
-  - routes/clientes.js
-  - .env
-  - .gitignore
+ ## 📁 Archivos creados
+  * `package.json`
+  * `server.js`
+  * `config/database.js`
+  * `controllers/clientesController.js`
+  * `routes/clientes.js`
+  * `.env`
+  * ` .gitignore`
 
 **Problemas resueltos:**
 - Error de contraseña MySQL (solucionado con DB_PASSWORD=1234)
