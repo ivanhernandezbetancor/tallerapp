@@ -8,7 +8,7 @@ Sistema de gestión para taller de reparación de vehículos.
 
 ### SEMANA 1: Entorno, BD y API Base 
 
-#### LUNES 13/04/2026 
+#### Día 1 — Lunes 13 de abril de 2026
 #### ENTORNO DE DESARROLLO + CONFIGURACIÓN BASE
 **Tareas completadas:**
 
@@ -73,7 +73,7 @@ Base de datos MySQL:
 - Error de contraseña MySQL (solucionado con DB_PASSWORD=1234)
 - Conflicto de ramas Git (solucionado con git pull --allow-unrelated-histories)
 
-#### MARTES 14/04/2026
+#### Día 2 — Martes 14 de abril de 2026  
 #### API CRUD: VEHÍCULOS, MECÁNICOS Y DIAGNÓSTICOS
 **Tareas completadas:** 
 
