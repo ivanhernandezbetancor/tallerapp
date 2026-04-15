@@ -100,12 +100,8 @@ Permite gestionar los mecánicos del sistema.
 
 Endpoints:
 
-Método	Endpoint	Descripción
-GET	/api/mecanicos	Listar mecánicos activos
-GET	/api/mecanicos/:id	Obtener detalle de un mecánico
-POST	/api/mecanicos	Crear mecánico
-PUT	/api/mecanicos/:id	Actualizar datos
-DELETE	/api/mecanicos/:id	Baja lógica del mecánico
+<img width="833" height="337" alt="Captura de pantalla 2026-04-15 101545" src="https://github.com/user-attachments/assets/69e2362b-931e-4680-a389-7012ff790269" />
+
 
 3. Módulo Diagnósticos — CRUD inicial
 
@@ -122,11 +118,8 @@ estado:  ENUM('pendiente_presupuesto','presupuestado','rechazado')
 
 Endpoints:
 
-Método	-- Endpoint --	Descripción
-GET	/api/diagnosticos	Listar todos los diagnósticos
-GET	/api/diagnosticos/:id	Obtener detalle
-POST	/api/diagnosticos	Crear entrada de diagnóstico
-PUT	/api/diagnosticos/:id	Actualizar diagnóstico técnico
+<img width="811" height="255" alt="Captura de pantalla 2026-04-15 101904" src="https://github.com/user-attachments/assets/aa006109-3c52-418d-b693-5d5a228ce3fc" />
+
 
 🔗 Integración de rutas
 
