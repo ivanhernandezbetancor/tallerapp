@@ -76,6 +76,7 @@ Base de datos MySQL:
 #### MARTES 14/04/2026
 #### API CRUD: VEHÍCULOS, MECÁNICOS Y DIAGNÓSTICOS
 **Tareas completadas:** 
+
 1. Módulo Vehículos — CRUD completo
 
 Permite gestionar los vehículos asociados a clientes.
@@ -158,3 +159,7 @@ Durante el desarrollo de la API se han creado y modificado los siguientes archiv
 * `server.js` (configuración y conexión de rutas)
 
 Estos archivos estructuran la aplicación siguiendo una arquitectura modular, separando la lógica de negocio (controladores) de la definición de endpoints (rutas).
+
+## Día 3 — Miércoles 15 de abril de 2026  
+### Módulo de Presupuestos y Configuración de ORM Prisma con MariaDB
+**Tareas completadas:**
