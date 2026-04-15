@@ -92,12 +92,8 @@ Relación con clientes mediante JOIN para mostrar el nombre del propietario
 
 Endpoints:
 
-Método	Endpoint	Descripción
-GET	/api/vehiculos	Listar vehículos con nombre del cliente
-GET	/api/vehiculos/:id	Obtener detalle de un vehículo
-POST	/api/vehiculos	Crear vehículo vinculado a cliente
-PUT	/api/vehiculos/:id	Actualizar datos técnicos
-DELETE	/api/vehiculos/:id	Eliminar vehículo
+<img width="812" height="258" alt="edpoints-mecanicos" src="https://github.com/user-attachments/assets/b4e33715-1b64-4688-b468-3c2c65e1df8f" />
+
 2. Módulo Mecánicos — CRUD completo
 
 Permite gestionar los mecánicos del sistema.
