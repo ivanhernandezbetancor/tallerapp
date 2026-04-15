@@ -167,3 +167,17 @@ Estos archivos estructuran la aplicación siguiendo una arquitectura modular, se
 La aprobación guarda firma_cliente y fecha_firma=NOW().
 Al aprobar, cambia el estado del diagnóstico a presupuestado
 
+4. Datos de prueba insertados
+
+2 presupuestos aprobados con firma del cliente
+8 líneas de presupuesto ( 4 líneas por presupuesto : piezas + mano de obra )
+
+## 📁 Archivos creados / editados
+
+Los siguientes archivos han sido añadidos o modificados para implementar la funcionalidad de presupuestos:
+
+* `controllers/presupuestosController.js`
+* `routes/presupuestos.js`
+* `database/tallerapp_db.sql (incluye tablas y datos de presupuestos)`
+* `prisma/schema.prisma`
+* `.env`
