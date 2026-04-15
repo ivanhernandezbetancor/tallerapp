@@ -119,9 +119,9 @@ Endpoints:
 
 En el archivo server.js se han conectado los módulos de la siguiente forma:
 
-app.use('/api/vehiculos', vehiculosRoutes);
-app.use('/api/mecanicos', mecanicosRoutes);
-app.use('/api/diagnosticos', diagnosticosRoutes);
+* `app.use('/api/vehiculos', vehiculosRoutes);`
+* `app.use('/api/mecanicos', mecanicosRoutes);`
+* `app.use('/api/diagnosticos', diagnosticosRoutes);`
 
 🧪 Datos de prueba
 
