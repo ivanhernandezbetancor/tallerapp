@@ -146,9 +146,24 @@ Estos archivos estructuran la aplicación siguiendo una arquitectura modular, se
 ## Día 3 — Miércoles 15 de abril de 2026  
 ### Módulo de Presupuestos y Configuración de ORM Prisma con MariaDB
 **Tareas completadas:**
+
 1. Configuración de Prisma ORM
 * Instalación de dependencias: npm install prisma --save-dev y npm install @prisma/client.
 * Inicialización del ORM para MariaDB: npx prisma init --datasource-provider mysql.
-* Configuración de conexión en .env: DATABASE_URL="mysql://root:1234@localhost:3306/tallerapp_db".
+* Configuración de conexión en .env:
+* DATABASE_URL="mysql://root:1234@localhost:3306/tallerapp_db".
 * Introspección de la base de datos tallerapp_db.sql: npx prisma db pull.
 * Generación del cliente: npx prisma generate.
+
+2. Nuevas tablas de base de datos + Lógica de cálculo automático de presupuesto :
+* Presupuestos
+* lineas_presupuesto
+* En presupuestosController.js → generarPresupuesto()
+
+3. Endpoints de Presupuestos
+
+<img width="792" height="247" alt="Captura de pantalla 2026-04-15 111217" src="https://github.com/user-attachments/assets/fcaac313-c0ab-489d-87e6-f1fc0d21cf7d" />
+
+La aprobación guarda firma_cliente y fecha_firma=NOW().
+Al aprobar, cambia el estado del diagnóstico a presupuestado
+
