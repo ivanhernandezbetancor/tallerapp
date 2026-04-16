@@ -212,3 +212,18 @@ Los siguientes archivos han sido añadidos o modificados para implementar la fun
 ## DÍA 4 — Jueves 16/04/2026
 ### INVENTARIO DE STOCK Y MÓDULO DE FACTURAS
 **Tareas completadas:**
+## 📦 Módulo de Inventario (Stock)
+
+### Tabla stock creada
+10 piezas de prueba insertadas:
+- ALT-001 Alternador, BAT-001 Batería
+- FIL-001/002 Filtros, COR-001 Correa
+- PAD-001/002 Pastillas, AMP-001/002 Amortiguadores
+- LUZ-001 Bombilla
+
+  ## 📦 Endpoints de Stock
+
+| Método | Endpoint            | Función |
+|--------|--------------------|--------|
+| GET    | `/api/stock`       | Listar inventario ordenado |
+| PATCH  | `/api/stock/:id`   | Ajustar cantidad (positivo = entrada, negativo = salida) |
