@@ -182,7 +182,13 @@ Estos archivos estructuran la aplicación siguiendo una arquitectura modular, se
 
 3. Endpoints de Presupuestos
 
-<img width="792" height="247" alt="Captura de pantalla 2026-04-15 111217" src="https://github.com/user-attachments/assets/fcaac313-c0ab-489d-87e6-f1fc0d21cf7d" />
+## 💰 Endpoints de Presupuestos
+
+| Método | Endpoint                          | Función |
+|--------|----------------------------------|--------|
+| GET    | `/api/presupuestos`              | Listar con JOIN a diagnóstico + vehículo |
+| POST   | `/api/presupuestos`              | Generar presupuesto con líneas (transacción) |
+| PATCH  | `/api/presupuestos/:id/estado`   | Aprobar / Rechazar (CU-04) |
 
 La aprobación guarda firma_cliente y fecha_firma=NOW().
 Al aprobar, cambia el estado del diagnóstico a presupuestado
