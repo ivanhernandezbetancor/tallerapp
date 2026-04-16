@@ -108,20 +108,32 @@ Permite gestionar los mecánicos del sistema.
 
 Endpoints:
 
-<img width="833" height="337" alt="Captura de pantalla 2026-04-15 101545" src="https://github.com/user-attachments/assets/69e2362b-931e-4680-a389-7012ff790269" />
+## 🔧 Endpoints de Mecánicos
+
+| Método | Endpoint               | Función |
+|--------|------------------------|--------|
+| GET    | `/api/mecanicos`       | Listar mecánicos activos |
+| GET    | `/api/mecanicos/:id`   | Detalle mecánico |
+| POST   | `/api/mecanicos`       | Crear mecánico |
+| PUT    | `/api/mecanicos/:id`   | Actualizar datos |
+| DELETE | `/api/mecanicos/:id`   | Baja lógica |
 
 
 3. Módulo Diagnósticos — CRUD inicial
 
 Gestiona los diagnósticos asociados a los vehículos.
 
-<img width="765" height="350" alt="Captura de pantalla 2026-04-15 102212" src="https://github.com/user-attachments/assets/397f4595-2013-4f73-ad5c-20e0b1e0ded9" />
+Creando la Tabla diagnóticos 
 
 
-Endpoints:
+## 🩺 Endpoints de Diagnósticos
 
-<img width="811" height="255" alt="Captura de pantalla 2026-04-15 101904" src="https://github.com/user-attachments/assets/aa006109-3c52-418d-b693-5d5a228ce3fc" />
-
+| Método | Endpoint                   | Función |
+|--------|---------------------------|--------|
+| GET    | `/api/diagnosticos`       | Listar todos |
+| GET    | `/api/diagnosticos/:id`   | Detalle |
+| POST   | `/api/diagnosticos`       | Crear nueva entrada de vehículo |
+| PUT    | `/api/diagnosticos/:id`   | Actualizar diagnóstico técnico |
 
 🔗 Integración de rutas
 
