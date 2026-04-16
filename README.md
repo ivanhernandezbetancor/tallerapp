@@ -227,3 +227,32 @@ Los siguientes archivos han sido añadidos o modificados para implementar la fun
 |--------|--------------------|--------|
 | GET    | `/api/stock`       | Listar inventario ordenado |
 | PATCH  | `/api/stock/:id`   | Ajustar cantidad (positivo = entrada, negativo = salida) |
+
+## 🧾 Módulo de Facturas (CU-07)
+
+### Tabla facturas creada 
+En facturasController.js → generarFactura()
+
+La factura calcula su propio total desde lineas_orden reales (no del presupuesto)
+
+## 🧾 Endpoints de Facturas
+
+| Método | Endpoint                        | Función |
+|--------|--------------------------------|--------|
+| GET    | `/api/facturas`               | Listar con datos del cliente |
+| POST   | `/api/facturas`               | Generar factura desde orden (CU-07) |
+| PATCH  | `/api/facturas/:id/pago`      | Registrar cobro (estado → pagada) |
+
+Dato de prueba: FAC-0001 por orden ORD-0002, total 302,50 €, estado pendiente_cobro
+
+
+## 📁 Archivos creados / editados
+
+Los siguientes archivos han sido añadidos o modificados 
+
+* `controllers/stockController.js`
+* `routes//stock.js`
+* `controllers/facturasController.js`
+* ` routes/facturas.js `
+* ` server.js `
+* `.env`
