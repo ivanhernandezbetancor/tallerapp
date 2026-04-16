@@ -92,7 +92,15 @@ Relación con clientes mediante JOIN para mostrar el nombre del propietario
 
 Endpoints:
 
-<img width="812" height="258" alt="edpoints-mecanicos" src="https://github.com/user-attachments/assets/b4e33715-1b64-4688-b468-3c2c65e1df8f" />
+## 🚗 Endpoints de Vehículos
+
+| Método | Endpoint               | Función |
+|--------|------------------------|--------|
+| GET    | `/api/vehiculos`       | Lista con nombre del cliente (JOIN) |
+| GET    | `/api/vehiculos/:id`   | Detalle vehículo |
+| POST   | `/api/vehiculos`       | Crear vinculado a cliente |
+| PUT    | `/api/vehiculos/:id`   | Actualizar datos técnicos |
+| DELETE | `/api/vehiculos/:id`   | Eliminar registro |
 
 2. Módulo Mecánicos — CRUD completo
 
@@ -181,3 +189,8 @@ Los siguientes archivos han sido añadidos o modificados para implementar la fun
 * `database/tallerapp_db.sql (incluye tablas y datos de presupuestos)`
 * `prisma/schema.prisma`
 * `.env`
+
+
+## DÍA 4 — Jueves 16/04/2026
+### INVENTARIO DE STOCK Y MÓDULO DE FACTURAS
+**Tareas completadas:**
