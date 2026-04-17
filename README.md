@@ -256,3 +256,18 @@ Los siguientes archivos han sido añadidos o modificados
 * ` routes/facturas.js `
 * ` server.js `
 * `.env`
+
+
+## Día 5 — Viernes 17 de abril de 2026
+### MÓDULO DE ÓRDENES DE REPARACIÓN + PRUEBAS API
+**Tareas completadas:**
+
+
+
+
+
+
+
+
+
+
