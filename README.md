@@ -262,8 +262,19 @@ Los siguientes archivos han sido añadidos o modificados
 ### MÓDULO DE ÓRDENES DE REPARACIÓN + PRUEBAS API
 **Tareas completadas:**
 
+### Tabla stock creada y lineas_orden
 
+## 🔧 Endpoints de Órdenes
 
+| Método | Endpoint                     | Función |
+|--------|-----------------------------|--------|
+| GET    | `/api/ordenes`              | Listar con JOIN completo (5 tablas) |
+| POST   | `/api/ordenes`              | Crear desde presupuesto aprobado |
+| PATCH  | `/api/ordenes/:id/estado`   | Cambiar estado de la orden |
+| POST   | `/api/ordenes/:id/lineas`   | Añadir línea real a la orden |
+
+## Flujo definido:
+en_reparacion → listo_entregar → entregado
 
 
 
