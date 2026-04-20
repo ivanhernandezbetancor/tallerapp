@@ -35,7 +35,7 @@ gestionar inventarios, crear presupuestos formales, controlar el avance de las �
 * **Día 4 (Jueves 16/04):** Inventariado de recambios (Stock con alarmas) y Módulo de emisión automática de Facturas correlativas.
 * **Día 5 (Viernes 17/04):** Máquina de estados para convertir Presupuestos a Órdenes, transacciones ACID para descontar stock y testing global de la API.
 
-
+### SEMANA 2 — Frontend, Rutas y Modulares
 
 
 
