@@ -1,4 +1,4 @@
- 🔧 TallerApp — Sistema de Gestión de Taller
+y 🔧 TallerApp — Sistema de Gestión de Taller
 
 > **Proyecto académico **  
 > TallerApp nace como una solución integral diseñada específicamente para sistematizar las operaciones diarias de un taller de reparación de vehículos. El objetivo
@@ -36,6 +36,7 @@ gestionar inventarios, crear presupuestos formales, controlar el avance de las �
 * **Día 5 (Viernes 17/04):** Máquina de estados para convertir Presupuestos a Órdenes, transacciones ACID para descontar stock y testing global de la API.
 
 ### SEMANA 2 — Frontend, Rutas y Modulares
+* **Día 6 (Martes 21/04):** 
 
 
 
