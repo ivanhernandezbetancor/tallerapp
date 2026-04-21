@@ -36,7 +36,7 @@ gestionar inventarios, crear presupuestos formales, controlar el avance de las �
 * **Día 5 (Viernes 17/04):** Máquina de estados para convertir Presupuestos a Órdenes, transacciones ACID para descontar stock y testing global de la API.
 
 ### SEMANA 2 — Frontend, Rutas y Modulares
-* **Día 6 (Martes 21/04):** 
+* **Día 6 (Martes 21/04):** Configuración del Frontend con Vite, React 19 y Tailwind CSS (paleta industrial oscura), más estructuración MVC.
 
 
 
