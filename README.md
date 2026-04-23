@@ -37,8 +37,8 @@ gestionar inventarios, crear presupuestos formales, controlar el avance de las �
 
 ### SEMANA 2 — Frontend React, Arquitectura y Rutas
 * **Día 6 (Martes 21/04):** Configuración del Frontend con Vite, React 19 y Tailwind CSS (paleta industrial oscura), más estructuración MVC.
- * **Día 7 (Míercoles 22/04):** Capa de servicios con Axios, Interceptores JWT y abstracción de estado mediante Custom Hooks.
-
+* **Día 7 (Míercoles 22/04):** Capa de servicios con Axios, Interceptores JWT y abstracción de estado mediante Custom Hooks.
+* **Día 8 (Jueves 23/04):** Implementación de seguridad en rutas (`ProtectedRoute`), estados globales con AuthContext y notificaciones.
 
 
 
