@@ -39,7 +39,7 @@ gestionar inventarios, crear presupuestos formales, controlar el avance de las �
 * **Día 6 (Martes 21/04):** Configuración del Frontend con Vite, React 19 y Tailwind CSS (paleta industrial oscura), más estructuración MVC.
 * **Día 7 (Míercoles 22/04):** Capa de servicios con Axios, Interceptores JWT y abstracción de estado mediante Custom Hooks.
 * **Día 8 (Jueves 23/04):** Implementación de seguridad en rutas (`ProtectedRoute`), estados globales con AuthContext y notificaciones.
-
+* **Día 9 (Viernes 24/04):** Diseño de la interfaz de usuario (UI) estructural, incluyendo la creación de un dashboard orientado a la visualización de KPIs, así como el desarrollo de componentes principales como la barra lateral (sidebar), la pantalla de inicio de sesión (login) y la barra de navegación (navbar), todos enfocados al entorno administrativo.
 
 
 
